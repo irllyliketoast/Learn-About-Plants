@@ -46,6 +46,14 @@ Users navigate through vibrant plant-themed pages, flip animated cards, engage w
   - `Silkscreen` adds a retro pixel-art flair to headings.
   - `Play` is used for body text and explanations.
 
+
+![HTML5](https://img.shields.io/badge/HTML5-ff5722?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-2196f3?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ffeb3b?style=flat&logo=javascript&logoColor=black)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Design-4caf50?style=flat)
+![Accessibility](https://img.shields.io/badge/Accessibility-AA-795548?style=flat)
+
 ---
 
 ## File Structure
@@ -92,3 +100,5 @@ This final project was designed to:
 - Combine animation, interactivity, and modular design in a unified user experience
 
 ---
+
+_Thanks for playing and learning!_ Built with sunshine, semicolons, and soil ☀
