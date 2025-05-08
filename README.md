@@ -1,5 +1,5 @@
-# 🌱 Plant Learning Game: Explore the World of Botany  
-## MIS 310 Final Project – UNCW
+# Plant Learning Game
+## MIS 310 Final Project
 
 ## Project Overview
 
