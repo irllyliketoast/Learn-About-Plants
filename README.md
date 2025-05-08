@@ -1,5 +1,5 @@
 # Plant Learning Game
-## MIS 310 Final Project
+MIS 310 Final
 
 ## Project Overview
 
