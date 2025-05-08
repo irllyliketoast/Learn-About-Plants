@@ -2,7 +2,7 @@
 ### MIS 310 Final Project — UNCW
 
 <p align="center">
-  <img src="https://i.pinimg.com/originals/ca/7d/57/ca7d5760efa1edd4308ad0ec5fbe1fdc.gif" width="1000" height ="600">
+  <img src="https://i.pinimg.com/originals/ca/7d/57/ca7d5760efa1edd4308ad0ec5fbe1fdc.gif" width="1000" height ="400">
 </p>
 
 ## Project Overview
