@@ -1,6 +1,10 @@
 # Plant Learning Game  
 ### MIS 310 Final Project — UNCW
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/96080a5b-4895-4836-8246-c6582edb25fc" width="1500" height ="600">
+</p>
+
 ## Project Overview
 
 The **Plant Learning Game** is an interactive, educational website designed and developed as the final deliverable for **MIS 310: Management Information Systems** at the University of North Carolina Wilmington. 
