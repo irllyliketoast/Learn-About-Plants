@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-The **Plant Learning Game** is an interactive, educational website designed and developed as the final deliverable for **MIS 310: Management Information Systems** at the University of North Carolina Wilmington. 
+The **Plant Learning Game** is an interactive, educational website designed and developed as the final deliverable for **Management Information Systems (MIS 310)** class at the University of North Carolina Wilmington. 
 
 This project combines the technical requirements of web development with the creative challenge of instructional design. The site offers a playful and informative experience to help users explore three major groups of plants: **Angiosperms**, **Gymnosperms**, and **Pteridophytes**.
 
