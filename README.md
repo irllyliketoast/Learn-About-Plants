@@ -101,4 +101,5 @@ This final project was designed to:
 
 ---
 
-_Thanks for playing and learning!_ Built with sunshine, semicolons, and soil ☀
+_Thanks for playing and learning!_ 
+_Built with sunshine, semicolons, and soil._
