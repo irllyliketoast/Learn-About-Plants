@@ -1,55 +1,94 @@
-# Plant Learning Game
-MIS 310 Final
+# Plant Learning Game  
+### MIS 310 Final Project — UNCW
 
 ## Project Overview
 
-This interactive educational website was created as the final project for **MIS 310: Management Information Systems** at UNCW. The objective was to develop a responsive, accessible, and engaging webpage that demonstrates a wide range of front-end development skills. 
+The **Plant Learning Game** is an interactive, educational website designed and developed as the final deliverable for **MIS 310: Management Information Systems** at the University of North Carolina Wilmington. 
 
-The result is the **Plant Learning Game**, an animated and modular experience designed to teach users about **Angiosperms**, **Gymnosperms**, and **Pteridophytes** through multimedia, interactivity, and retro-themed design elements.
+This project combines the technical requirements of web development with the creative challenge of instructional design. The site offers a playful and informative experience to help users explore three major groups of plants: **Angiosperms**, **Gymnosperms**, and **Pteridophytes**.
 
-## Features
+Users navigate through vibrant plant-themed pages, flip animated cards, engage with mini-quizzes, and discover hidden Easter eggs—all built using HTML, CSS, JavaScript, and jQuery. The interface integrates responsive layouts, visual accessibility, and user interactivity to reflect the full range of skills learned in the course.
 
-- **Semantic HTML Tags**: Structural elements (`<header>`, `<main>`, `<section>`, `<footer>`) used to create an accessible and logically organized DOM.
-- **Images & Modal Interactions**: Each plant type features interactive flip-cards with modals revealing detailed content and visuals.
-- **CSS Animation**: Flip-card transitions, hover effects, and a terminal-style mushroom Easter egg are powered by CSS animations.
-- **CSS Grid & Flexbox**: Layouts are handled via Flexbox (buttons, quizzes) and CSS Grid (fact sections for Gymnosperms).
-- **Pseudo-selectors**: Styling interactivity with `:hover`, `:focus`, and `:checked` selectors.
-- **Responsive Design**: Media queries (`@media`) adapt the layout for desktop, tablet, and mobile screens.
-- **CSS Variables**: Theming and layout colors are centralized using custom properties (e.g., `--primary-color`).
-- **HTML Forms & Validation**: Includes multiple input types: radio buttons, checkboxes, dropdowns, textareas, and required fields with pattern or length restrictions.
-- **jQuery Interactions**: Modals, tooltips, form feedback, and the mushroom Easter egg use jQuery for smooth interactivity.
-- **Typography Styling**: Custom Google Fonts (`Silkscreen` for headers and `Play` for body text) enhance aesthetic and readability.
-- **Runaway Button Easter Egg**: On the Pteridophytes page, the quiz submit button dodges the cursor and leads to a glitchy mushroom animation.
+---
+
+## Features & Technologies
+
+### HTML5 and Semantic Structure
+- The project uses clear, semantic HTML5 elements (`<main>`, `<section>`, `<header>`, `<footer>`) for logical content flow and accessibility.
+- Each plant type is presented in its own dedicated page, encouraging modular design and readability.
+
+### Multimedia & Modals
+- Pages feature rich images of plants with associated **flip-card modals** that display detailed botanical information when clicked.
+- Modals are screen-reader accessible and closeable via mouse or keyboard.
+
+### CSS Grid, Flexbox, & Variables
+- Layouts are designed using **CSS Flexbox** for alignment and **CSS Grid** for structured sections.
+- A theming system using **CSS Variables** (`--primary-color`, `--font-family-header`, etc.) ensures consistency and reusability across stylesheets.
+
+### CSS Animations & Pseudo-selectors
+- Flip-card interactions are animated with smooth transitions.
+- UI feedback is implemented using `:hover`, `:focus`, and `:checked` states for buttons, inputs, and form elements.
+- The Pteridophyte quiz features a moving submit button that dodges the cursor—a fun challenge using CSS `position` and jQuery logic.
+
+### Responsive Design
+- Media queries (`@media`) tailor the experience to various screen sizes, maintaining functionality and legibility across desktops, tablets, and mobile devices.
+
+### HTML Forms & Validation
+- Interactive quizzes and feedback forms utilize multiple input types: radio buttons, checkboxes, text fields, drop-downs, and text areas.
+- Forms use **built-in validation attributes** like `required`, `minlength`, and placeholder guidance to enhance user experience and input accuracy.
+
+### jQuery Interactivity
+- jQuery powers modal controls, quiz feedback, keyboard shortcuts, tooltip overlays, and animated Easter eggs.
+- The Fern (Pteridophyte) page hides a surprise: type a secret word to unlock a **glitchy terminal animation** and pixel-art mushroom!
+
+### Typography & Styling
+- Custom fonts from Google Fonts enhance readability and aesthetic: 
+  - `Silkscreen` adds a retro pixel-art flair to headings.
+  - `Play` is used for body text and explanations.
+
+---
 
 ## File Structure
 
-- `Index.html`: Terminal-style boot animation with keyboard-triggered page redirection.
-- `LearnAboutPlants.html`: Homepage where users choose a plant category.
-- `Angiosperms.html`, `Gymnosperms.html`, `Pteridophytes.html`: Interactive learning pages, each with unique styling and quizzes.
-- `Plants.css`: Master stylesheet implementing CSS Grid, Flexbox, variables, animations, pseudo-selectors, and responsiveness.
-- `*.js`: Each page has a corresponding script handling modals, form validation, quiz logic, or special animations.
+- `Index.html` – Terminal-style intro screen with animated boot messages and a hidden redirection trigger.
+- `LearnAboutPlants.html` – Main menu for navigating to different plant categories.
+- `Angiosperms.html` – Interactive section covering flowering plants.
+- `Gymnosperms.html` – Page featuring non-flowering cone-bearing plants.
+- `Pteridophytes.html` – A quiz-heavy page about ferns, featuring the runaway button.
+- `Plants.css` – Global stylesheet containing Flexbox/Grid layouts, animations, color variables, responsive rules, and accessibility improvements.
+- JavaScript:
+  - `Angiosperms.js`, `Gymnosperms.js`, `Pteridophytes.js`, `script.js` – Handle modal logic, form validation, Easter eggs, and dynamic content updates.
+
+---
 
 ## Accessibility Considerations
 
-- All interactive elements are keyboard-navigable using `tabindex` and `role` attributes.
-- Modals include `aria-modal="true"` and labeled headers.
-- Visual contrast and scalable fonts ensure legibility across devices.
-- Focus states are styled for users navigating via keyboard.
+- All modals and buttons include `aria` roles and keyboard support.
+- Elements like flip-cards and forms are reachable via `tabindex`.
+- Proper contrast and readable fonts ensure usability for low-vision users.
+- Modals are dismissible by pressing `Escape`, and focus states are styled for clarity.
+
+---
 
 ## How to Use
 
-1. Load the `Index.html` page hosted on your UNCW web space.
-2. Type `L` and press Enter to boot into the Plant Learning Game.
-3. Choose a plant category and explore!
-4. Interact with cards, read plant facts, and test your knowledge with quizzes.
-5. On the Fern (Pteridophyte) page, try catching the runaway button... if you dare 🍄
-6. Once you catch the button... type in a magic word for a suprise.
+1. Visit the `Index.html` page hosted on your UNCW web space.
+2. Type `L` (case-insensitive) and press **Enter** to boot the system.
+3. Select a plant group: **Angiosperms**, **Gymnosperms**, or **Pteridophytes**.
+4. Click on plant cards to explore facts, then take quizzes to test your knowledge.
+5. On the Fern page, try to **catch the dodging Submit button**—after 5 tries, you’ll unlock a mushroom surprise!
+6. Type the word `mushroom` after catching the button to trigger an animated terminal sequence.
 
-## Purpose
+---
 
-This project serves both as a **final demonstration of HTML/CSS/JS competency** and a **creative learning tool** that blends education and design. It emphasizes:
+## Project Goals
 
-- User-centered design
-- Cross-device compatibility
-- Accessibility best practices
-- Coding creativity and gamification
+This final project was designed to:
+
+- Demonstrate mastery of front-end web development techniques
+- Promote educational engagement through visual storytelling
+- Integrate accessibility and responsive design best practices
+- Showcase creativity in coding and interface design
+- Combine animation, interactivity, and modular design in a unified user experience
+
+---
