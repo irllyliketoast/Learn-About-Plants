@@ -17,6 +17,11 @@ Users navigate through vibrant plant-themed pages, flip animated cards, engage w
 
 ## Features & Technologies
 
+![HTML5](https://img.shields.io/badge/HTML5-ff5722?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-2196f3?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ffeb3b?style=flat&logo=javascript&logoColor=black)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)
+
 ### HTML5 and Semantic Structure
 - The project uses clear, semantic HTML5 elements (`<main>`, `<section>`, `<header>`, `<footer>`) for logical content flow and accessibility.
 - Each plant type is presented in its own dedicated page, encouraging modular design and readability.
@@ -49,12 +54,6 @@ Users navigate through vibrant plant-themed pages, flip animated cards, engage w
 - Custom fonts from Google Fonts enhance readability and aesthetic: 
   - `Silkscreen` adds a retro pixel-art flair to headings.
   - `Play` is used for body text and explanations.
-
-
-![HTML5](https://img.shields.io/badge/HTML5-ff5722?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-2196f3?style=flat&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ffeb3b?style=flat&logo=javascript&logoColor=black)
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)
 
 ---
 
