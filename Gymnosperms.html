@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gymnosperms - The Naked Seed Plants</title>
+  <link rel="stylesheet" href="Plants.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gymnosperms</h1>
+  </header>
+
+  <main>
+    <section class="game-introduction">
+      <h2>What Are Gymnosperms?</h2>
+      <p>Gymnosperms are seed-producing plants that do not form flowers or fruits. Their seeds are exposed, often in cones, making them quite different from angiosperms.</p>
+    </section>
+	<section class="plant-buttons">
+	  <!-- Pine Tree -->
+	  <div class="flip-card" tabindex="0" role="button"
+		   data-title="Pine Tree"
+		   data-content="
+		   <p><em>Pine trees</em> are long-lived coniferous gymnosperms with needle-like leaves arranged in clusters and woody cones.</p>
+		   <p>They thrive in high-altitude or temperate regions and are highly valued for timber and resin production.</p>
+		   <p>Unlike firs and cypresses, pine needles come in bundles (2–5), and their cones are often more rigid and symmetrical.</p>">
+		<div class="flip-card-inner">
+		  <div class="flip-card-back">
+			<img src="https://i.pinimg.com/736x/a0/40/ad/a040ad553e8b3ba87a8cda80fe2e6cd7.jpg" alt="Card back texture" />
+		  </div>
+		  <div class="flip-card-front">
+			<img src="https://i.pinimg.com/736x/dd/5a/70/dd5a7068e11fa3d6103cfda699b9272d.jpg" alt="Pine Tree" />
+			<p>Pine Tree</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Fir Tree -->
+	  <div class="flip-card" tabindex="0" role="button"
+		   data-title="Fir Tree"
+		   data-content="
+		   <p><em>Fir trees</em> are tall, narrow gymnosperms known for their soft, flat, and fragrant needles that attach directly to the branch.</p>
+		   <p>Their cones stand upright and disintegrate on the tree rather than falling whole.</p>
+		   <p>Firs are the classic choice for <strong>Christmas trees</strong> because of their symmetrical shape, sturdy branches, and pleasant aroma.</p>
+		   <p>They differ from pines in needle softness and cone structure, and from cypress by having a more alpine distribution.</p>">
+		<div class="flip-card-inner">
+		  <div class="flip-card-back">
+			<img src="https://i.pinimg.com/736x/a0/40/ad/a040ad553e8b3ba87a8cda80fe2e6cd7.jpg" alt="Card back texture" />
+		  </div>
+		  <div class="flip-card-front">
+			<img src="FirTree.jpg" alt="Fir Tree" />
+			<p>Fir Tree</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Cypress Tree -->
+	  <div class="flip-card" tabindex="0" role="button"
+		   data-title="Cypress Tree"
+		   data-content="
+		   <p><em>Cypress trees</em> are evergreen conifers often found in wetlands or warm temperate regions, particularly around the Mediterranean.</p>
+		   <p>They have scale-like leaves rather than long needles, and many produce small, round, woody cones.</p>
+		   <p>Unlike firs and pines, cypress foliage tends to be denser and more aromatic, and they are culturally symbolic of mourning and protection in many regions.</p>">
+		<div class="flip-card-inner">
+		  <div class="flip-card-back">
+			<img src="https://i.pinimg.com/736x/a0/40/ad/a040ad553e8b3ba87a8cda80fe2e6cd7.jpg" alt="Card back texture" />
+		  </div>
+		  <div class="flip-card-front">
+			<img src="https://i.pinimg.com/736x/44/1e/67/441e675aa81a2db6630f3c2650cb73ae.jpg" alt="Cypress Tree" />
+			<p>Cypress Tree</p>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+    <!-- Grid Layout Example -->
+    <section class="grid-layout">
+      <div class="fact-box">
+        <h3>Seed Type</h3>
+        <p>Gymnosperm seeds are not enclosed in fruit. Instead, they're often found on cone scales.</p>
+      </div>
+      <div class="fact-box">
+        <h3>Leaf Structure</h3>
+        <p>Needle-like or scale-like leaves reduce water loss—an adaptation to dry or cold climates.</p>
+      </div>
+      <div class="fact-box">
+        <h3>Common Types</h3>
+        <p>Includes pines, firs, spruces, and cycads. Many are important for timber and paper production.</p>
+      </div>
+    </section>
+
+    <!-- Simple form with validation -->
+    <section class="quiz-container">
+      <form>
+        <p>Your Name:</p>
+        <input type="text" name="name" required minlength="2" placeholder="Enter your name" />
+
+        <p>Favorite Gymnosperm?</p>
+        <select name="favorite" required>
+          <option value="">--Select one--</option>
+          <option value="pine">Pine</option>
+          <option value="fir">Fir</option>
+          <option value="cypress">Cypress</option>
+        </select>
+
+        <p>Why do you like it?</p>
+        <textarea name="reason" rows="3" placeholder="Tell us why..." required></textarea>
+
+        <br><br>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Plant Learning. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close popup">X</button>
+      <h2 id="modalTitle">Title</h2>
+      <p id="modalText">Description goes here.</p>
+    </div>
+  </div>
+<script src="Gymnosperms.js"></script>
+</body>
+</html>

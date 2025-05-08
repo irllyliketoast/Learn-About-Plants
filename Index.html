@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and mobile responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title (shown in the browser tab) -->
+    <title>Retro Boot Sequence</title>
+
+    <!-- Internal CSS styles -->
+    <style>
+        /* Set a retro black terminal background, green text, and monospaced font */
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            font-size: 1.2rem;
+            padding: 20px;
+            overflow: hidden; /* Prevent scrollbars from appearing */
+        }
+
+        /* Terminal container to hold typed boot messages */
+        #terminal {
+            white-space: pre-wrap; /* Preserve line breaks and spacing */
+            line-height: 1.5;       /* Line spacing for better readability */
+        }
+
+        /* The "To load" line should appear inline (not block-level) */
+        #input-line {
+            display: inline;
+        }
+
+        /* Blink animation class for cursor */
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+
+        /* Define the blinking cursor animation */
+        @keyframes blink {
+            50% { opacity: 0; } /* Blink halfway through animation cycle */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The simulated terminal output area -->
+    <div id="terminal"></div>
+
+    <!-- The user input prompt with fake blinking cursor -->
+    <span id="input-line">
+        To load, type 'L' and press Enter: 
+        <span id="user-input"></span> <!-- This updates as user types -->
+        <span class="blink">_</span> <!-- Fake blinking cursor -->
+    </span>
+    
+    <!-- Main JavaScript controlling typing and key logic -->
+    <script>
+        // Get references to the terminal and input display elements
+        const terminal = document.getElementById("terminal");
+        const userInput = document.getElementById("user-input");
+
+        // Variable to track user input string
+        let inputText = "";
+
+        // Simulated boot-up messages (array of strings)
+        const bootSequence = [
+            "Initializing system...",
+            "Checking memory... OK",
+            "Loading assets... 100%",
+            "System ready.",
+			"Hint: Find the hidden mushroom."
+        ];
+
+        // Function to simulate typing each boot line with delay
+        function typeOutText(index = 0) {
+            if (index < bootSequence.length) {
+                // Add current message to the terminal
+                terminal.innerHTML += bootSequence[index] + "\n";
+                // Wait 1 second, then type next line
+                setTimeout(() => typeOutText(index + 1), 1000);
+            }
+        }
+
+        // Start the typing simulation immediately
+        typeOutText();
+
+        // Listen for key presses on the page
+        document.addEventListener("keydown", function(event) {
+            // When user presses Enter and has typed 'L' (case-insensitive)
+            if (event.key === "Enter" && inputText.toUpperCase() === "L") {
+                // Replace page content with "Loading..." message
+                document.body.innerHTML = "<h1 style='color: white; text-align: center; margin-top: 20%;'>Loading...</h1>";
+                // After 2 seconds, redirect to the LearnAboutPlants.html page
+                setTimeout(() => window.location.href = "LearnAboutPlants.html", 2000);
+
+            // If a single character key was pressed (letters/numbers/symbols)
+            } else if (event.key.length === 1) {
+                inputText += event.key;                   // Append to inputText
+                userInput.textContent = inputText;        // Show it on screen
+
+            // Handle backspace to remove last character
+            } else if (event.key === "Backspace") {
+                inputText = inputText.slice(0, -1);       // Remove last char
+                userInput.textContent = inputText;        // Update display
+            }
+        });
+    </script>
+</body>
+</html>

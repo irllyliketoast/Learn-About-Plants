@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pteridophytes - The Fern Page</title>
+  <link rel="stylesheet" href="Plants.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pteridophytes</h1>
+  </header>
+
+  <main>
+    <section class="game-introduction">
+      <h2 class="animate-fade">Welcome to the Fern Page</h2>
+      <p>Pteridophytes are vascular plants that reproduce via spores — no flowers, no seeds, just ancient leafy vibes.</p>
+    </section>
+
+    <section class="quiz-container quiz-game">
+      <form>
+        <p>What do ferns use to reproduce?</p>
+        <label><input type="radio" name="q1" value="seeds"> Seeds</label><br>
+        <label><input type="radio" name="q1" value="spores"> Spores</label><br>
+        <label><input type="radio" name="q1" value="cones"> Cones</label><br><br>
+
+        <input type="submit" id="runawayBtn" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Plant Learning. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="thanksModal" class="hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <h2>Thanks for Playing!</h2>
+      <p>🍄 Coming Soon: Mushrooms in the Plant Learning Game! 🍄</p>
+    </div>
+  </div>
+<!-- Easter Egg Mushroom Modal -->
+<div id="mushroomModal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-content">
+    <h2>You found the hidden mushroom!</h2>
+    <img src="https://i.pinimg.com/originals/38/ca/c2/38cac2db2b642cadd9e5a6a0f03363a7.gif" alt="Pixel Mushroom" style="width: 120px; margin: 15px 0;" />
+    <p>Congratumalations</p>
+  </div>
+</div>
+<script src="Pteridophytes.js"></script>
+</body>
+</html>

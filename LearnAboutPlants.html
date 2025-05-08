@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Declares the document as HTML5 -->
+<html lang="en">
+<head>
+    <!-- Sets the character encoding to UTF-8 (universal standard) -->
+    <meta charset="UTF-8">
+    
+    <!-- Ensures the layout is responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Provides compatibility with older versions of Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- The title of the page (seen in the browser tab) -->
+    <title>Plant Learning Game</title>
+
+    <!-- Preload Google Fonts to optimize loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Font 1: Silkscreen (used for pixel-art UI elements) -->
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    
+    <!-- Font 2: Play (used for paragraph text and body content) -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS file for styling the layout, animations, buttons, fonts, etc. -->
+    <link rel="stylesheet" href="Plants.css">
+
+    <!-- jQuery (used for interactivity like tooltips, modals, Easter eggs, etc.) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Site-wide header section -->
+    <header>
+        <!-- Main headline welcoming the user -->
+        <h1>Welcome to the Plant Learning Game!</h1>
+        <!-- Subheader prompt -->
+        <p>Click on a plant to start learning!</p>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <section class="game-introduction">
+            <!-- Section heading introducing the game interface -->
+            <h2>Choose a Plant</h2>
+
+            <!-- Flex container holding interactive plant cards -->
+            <div class="plant-buttons">
+                <!-- Card 1: Flowering Plants (Angiosperms) -->
+                <a href="Angiosperms.html" class="plant-button" data-plant="Angiosperms">
+                    <!-- Image preview of flowering plants -->
+                    <img src="https://i.pinimg.com/736x/d7/5f/8f/d75f8f9528db407aee0609100a346167.jpg" alt="Angiosperms">
+                    <!-- Button label -->
+                    <p>Flowering Plants</p>
+                </a>
+
+                <!-- Card 2: Gymnosperms (like pines/firs) -->
+                <a href="Gymnosperms.html" class="plant-button" data-plant="Gymnosperms">
+                    <img src="https://i.pinimg.com/736x/89/13/88/8913889fb12b0dbc204f8beab67378a0.jpg" alt="Gymnosperms">
+                    <p>Non-Flowering Plants</p>
+                </a>
+
+                <!-- Card 3: Pteridophytes (ferns) -->
+                <a href="Pteridophytes.html" class="plant-button" data-plant="Pteridophytes">
+                    <img src="https://i.pinimg.com/736x/72/e2/94/72e294d7924ba24f772617fdb51d0553.jpg" alt="Pteridophytes">
+                    <p>Ferns</p>
+                </a>
+            </div>
+
+            <!-- Tooltip box that appears on hover (populated via script.js) -->
+            <div id="plant-info-box" class="hidden"></div>
+        </section>
+    </main>
+
+    <!-- Footer with basic copyright -->
+    <footer>
+        <p>&copy; 2025 Plant Learning Game. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript file that adds interactivity (tooltips, etc.) -->
+    <script src="script.js"></script>
+</body>
+</html>
