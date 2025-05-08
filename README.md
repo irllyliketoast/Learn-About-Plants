@@ -55,8 +55,6 @@ Users navigate through vibrant plant-themed pages, flip animated cards, engage w
 ![CSS3](https://img.shields.io/badge/CSS3-2196f3?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ffeb3b?style=flat&logo=javascript&logoColor=black)
 ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)
-![Responsive](https://img.shields.io/badge/Responsive-Design-4caf50?style=flat)
-![Accessibility](https://img.shields.io/badge/Accessibility-AA-795548?style=flat)
 
 ---
 
